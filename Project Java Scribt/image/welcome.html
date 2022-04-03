@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wellcome</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Playfair+Display+SC&family=Pompiere&family=Poppins:wght@200&family=Roboto+Mono&family=Staatliches&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: linear-gradient(-45deg, white, #9abae1, #0F044C);
+        background-size: 400% 400%;
+        animation: gradient 20s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    #Home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 112px 136px 90px 103px 103px;
+    }
+    
+    .img {
+        grid-area: 2/1/5/2;
+    }
+    
+    #heading {
+        font-size: 80px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        color: #2f2e41;
+        font-weight: 900;
+        margin-left: 40px;
+    }
+    
+    #name {
+        font-size: 50px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        color: white;
+        font-weight: 900;
+        margin-left: 40px;
+    }
+    
+    #Home #btn {
+        grid-area: 5/2/6/3;
+        background-color: #2f2e41;
+        width: 300px;
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 15px;
+        font-size: large;
+        border: none;
+        text-align: center;
+        padding-top: 6px;
+        color: white;
+        margin-left: 70px;
+        text-decoration: none;
+    }
+    
+    #Home #btn:hover {
+        box-shadow: 0 4px 8px 0 #b5c9e1;
+        text-decoration: none;
+        background-color: white;
+        color: #2f2e41;
+    }
+    
+    @media screen and (max-width: 479px) {
+        #Home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            margin-top: 40px;
+            width: 300px;
+        }
+        #heading {
+            font-size: 50px;
+            font-weight: 900;
+            margin-top: 50px;
+        }
+        #name {
+            font-size: 25px;
+        }
+        #Home #btn {
+            width: 150px;
+            margin-left: 0px;
+            height: 45px;
+        }
+        body {
+            background: #9abae1;
+            animation: none;
+        }
+    }
+    
+    @media screen and (max-width: 768px) and (min-width: 425px) {
+        #Home {
+            height: 500px;
+            grid-template-rows: 143px 115px 17px 49px 105px 101px;
+        }
+        img {
+            width: 400px;
+        }
+        #heading {
+            font-size: 60px;
+            font-weight: 900;
+        }
+        #name {
+            font-size: 30px;
+        }
+        #Home #btn {
+            margin-left: 10px;
+        }
+    }
+</style>
+
+<body>
+    <section id="Home">
+        <div class="img">
+            <img src="image/undraw_pair_programming_re_or4x.svg">
+        </div>
+        <h1 id="heading">Welcome,</h1>
+        <div id="name"></div>
+        <a href="http://127.0.0.1:5500/JS-Fills/Project/signUp.html" id="btn">Start quiz</a>
+    </section>
+
+    <script>
+        document.getElementById('name').innerHTML = localStorage.getItem('first name');
+        document.getElementById('name').innerHTML += "  " + localStorage.getItem('last name');
+    </script>
+
+
+
+
+</body>
+
+</html>
