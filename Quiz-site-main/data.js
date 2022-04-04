@@ -64,7 +64,7 @@ const data = [
       answer_2: "4.466",
       answer_3: "3.56",
       answer_4: "2.82",
-      correct: "2:82",
+      correct: "2.82",
     },
     {
       question:
