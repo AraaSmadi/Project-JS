@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form action="">
+        <div class="signup-wrap">
+            <div class="signup-html">
+                <p id="tab-1" name="tab" class="sign-up">Sign up</p>
+                <div class="signup-form">
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="first" class="label">first name </label>
+                            <input id="first" type="text" name="first name" class="input name" />
+                            <span id="firstName">Please enter your first name</span>
+                        </div>
+                        <div class="group">
+                            <label for="last" class="label">last name</label>
+                            <input id="last" type="text" name="last name" class="input name" />
+                            <span id="lastName">Please enter your last name</span>
+                        </div>
+                        <div class="group">
+                            <label for="userN" class="label">Username</label>
+                            <input id="userN" type="text" name="userN" class="input name" />
+                            <span id="userNSpan">Please enter your Username</span>
+                        </div>
+                        <div class="group">
+                            <label for="email" class="label">email</label>
+                            <input id="email" type="email" name="email" class="input" />
+                            <span class="mailCheck">Please make sure you entered a valid email </span>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="password" type="password" name="password" class="input" data-type="password" />
+                            <span id="pass">  8 to 16 characters which contain only characters, numeric digits, underscore and at least one special character
+                                </span>
+                        </div>
+                        <div class="group">
+                            <label for="rePass" class="label">repeat password</label>
+                            <input id="rePass" type="password" name="repeat" class="input" data-type="password" />
+                            <span id="checkpass">Make sure the two passwords are identical</span>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="group">
+                            <div  class="button signUp" id="submit" >Sign up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="signUp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+body{
+	margin:0;
+	color:#6a6f8c;
+	background: linear-gradient(-45deg, white, #9abae1, #0F044C);
+    animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
+height: 100vh;
+	font:600 16px/18px 'Playfair Display', serif;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*,:after,:before{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+#tab-1{
+    color: white;
+    margin-bottom: 50px;
+	font-size: 2rem;
+}
+label{
+    margin-bottom: 15px;
+}
+
+.login-wrap {
+	background: url("images/undraw_sign_in_re_o58h.svg") no-repeat center;
+    width: 100%;
+    margin: 50px auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgb(0 39 109), 0 17px 50px 0 rgb(255 255 255 / 64%);
+}
+.signup-wrap {
+	background: url("images/undraw_authentication_re_svpt.svg") no-repeat center;
+    width: 100%;
+    margin: 50px auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgb(0 39 109), 0 17px 50px 0 rgb(255 255 255 / 64%);
+}
+.login-html{
+	
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:40px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.signup-html{
+	width:100%;
+	height:100%;
+	padding:20px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.button{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.login-form .group .label,
+.login-form .group .button, .signup-form{
+	text-transform:uppercase;
+}
+.login-html .tab , .signup-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-form ,.signup-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group ,.signup-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button,
+.signup-form  .group .label,
+.signup-form  .group .input,                                                 
+.signup-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button,
+.signup-form .group .input,
+.signup-form  .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group .label,
+.signup-form  .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button,
+.signup-form  .group .button{
+	background:#9abae1;
+}
+.login-form .group label .icon,
+.signup-form  .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.signup-form  .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+}
+.login-form .group label .icon:after,
+.signup-form  .group label .icon:after{
+	top:6px;
+	right:0;
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+span{
+	color: red;
+	font-size:0.6rem; 
+	display: none;
+	text-transform:lowercase;
+
+}
+#signIn-submit, #submit{
+	text-align: center;
+}
+#signIn-submit{
+	margin-top: 100px;
+}
+#footer {
+	grid-column: 1/6;
+	grid-row: 6/6;
+	height: 60px;
+	background-color: #515E82;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 15px;
+}

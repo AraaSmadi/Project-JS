@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animated Login Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Playfair+Display+SC&family=Pompiere&family=Poppins:wght@200&family=Roboto+Mono&family=Staatliches&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: linear-gradient(-45deg, white, #9abae1, #0F044C);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    #Home {
+        display: grid;
+        height: 750px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 112px 136px 90px 75px 62px 32px 100px 100px;
+    }
+    
+    .img {
+        grid-area: 2/1/6/2;
+    }
+    
+    #heading {
+        font-size: 80px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        color: #2f2e41;
+        font-weight: 900;
+    }
+    
+    #job {
+        grid-area: 3/2/4/3;
+        font-size: 18px;
+    }
+    
+    #describtion {
+        grid-area: 4/2/5/3;
+        font-size: 14px;
+    }
+    
+    #descQuiz {
+        grid-area: 5/2/6/3;
+        font-size: 14px;
+    }
+    
+    #QuizTime {
+        grid-area: 6/2/6/3;
+        font-size: 14px;
+    }
+    
+    #Home #btn {
+        grid-area: 7/2/7/3;
+        background-color: #2f2e41;
+        width: 300px;
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 15px;
+        font-size: large;
+        border: none;
+        text-align: center;
+        padding-top: 6px;
+        color: white;
+        margin-left: 200px;
+        text-decoration: none;
+        transform: scale(1, 1);
+        transition: 1.1s;
+    }
+    
+    #Home #btn:hover {
+        box-shadow: 0 4px 8px 0 #b5c9e1;
+        text-decoration: none;
+        text-align: center;
+        background-color: white;
+        color: #2f2e41;
+        transform: scale(1.1, 1.1);
+        transition: 1.1s;
+    }
+    
+    @media screen and (max-width: 479px) {
+        #Home {
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+        }
+        #Home #heading {
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+        #job {
+            font-size: 18px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #describtion {
+            font-size: 12px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #Home #btn {
+            width: 150px;
+            margin-left: 50px;
+            height: 60px;
+            font-size: 10px;
+            padding-bottom: 5px;
+        }
+        #descQuiz {
+            margin-left: 50px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        #QuizTime {
+            margin-left: 50px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .img {
+            width: 350px;
+        }
+        .img img {
+            width: 350px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        body {
+            background: #9abae1;
+            animation: none;
+        }
+    }
+    
+    @media screen and (max-width: 768px) and (min-width: 425px) {
+        #Home {
+            height: 500px;
+            grid-template-rows: 72px 102px 67px 59px 44px 31px 102px;
+        }
+        img {
+            width: 350px;
+        }
+        #heading {
+            font-size: 60px;
+            font-weight: 900;
+        }
+        #job {
+            font-size: 15px;
+        }
+        #Home #btn {
+            margin-left: 10px;
+        }
+    }
+</style>
+
+<body>
+    <section id="Home">
+        <div class="img">
+            <img src="images/prog.svg">
+        </div>
+
+        <h1 id="heading">Quiz</h1>
+
+        <div id="job">Full-stack developer<br> Job type: Full-time<br> Location: Amman, Jordan
+        </div>
+
+        <p id="describtion">A full stack web developer is a person who can develop both client and server software.</p>
+        <div id="descQuiz">
+            <span style="color:#2f2e41; font:18px bold;">   Quiz </span>contains three parts: - IQ Test 25% , English Test 25% , Technical Test 50%
+        </div>
+        <div id="QuizTime">
+            <span style="color:#2f2e41; font: 18px bold"> Time: </span>30 minutes
+        </div>
+
+        <a href="https://abdallah-alhasan.github.io/Quiz-site/sign-up.html" id="btn">Let's do this</a>
+
+
+    </section>
+
+</body>
+
+</html>

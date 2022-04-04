@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div  class='container'>
+   <div class="addImg" data-aos="zoom-in">
+     <img src="images/quiz.svg" alt="">
+   </div>
+   <div class="card" >
+     <div class="timer"><span id="min">29</span><span>:</span><span id="sec"></span></div>
+    <div class="quiz"data-aos="fade-right" > 
+         <div class="count">
+        <h4 id="count"></h4>
+        <h4 id="section"> </h4>
+       </div>
+        <h3 id="question"></h3>
+        <h4 id="required"></h4>
+        <div class="answer" >
+            <input type="radio" name="answer"  id="1">
+            <label for="1" id="answer1" ></label>
+        </div>
+        
+             <div class="answer">
+            <input type="radio" name="answer" id="2">
+            <label for="2" id="answer2"></label>
+        </div > 
+          <div class="answer">
+            <input type="radio" name="answer"id="3" >
+            <label for="3" id="answer3"></label>
+        </div>
+          <div class="answer" >
+            <input type="radio" name="answer" id="4">
+            <label for="4" id="answer4"></label>
+        </div>
+            <button onclick="next()" id="next" class="btn"></button> 
+    <button onclick="finish()" id="finish"class="btn">Finsh Exam</button>
+    </div></div>
+
+   </div> 
+       
+    </div>
+    
+
+     <script src="data.js"></script>
+   <script src="quiz.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

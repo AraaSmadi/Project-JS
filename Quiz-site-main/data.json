@@ -1,0 +1,163 @@
+[
+ 
+    {
+      "question": " dentify the next number in the series:1, 1, 2, 3, 5, 8, _____",
+      "answer_1": "20",
+      "answer_2": "13",
+      "answer_3": "9",
+      "answer_4": "10",
+      "correct": "b : 13"
+    }, {
+      "question": "   A pad costs 33 cents. How much will 5 pads cost?",
+      "answer_1": " $2.28",
+      "answer_2": " $1.45",
+      "answer_3": " $1.10",
+      "answer_4": "$5.5",
+      "correct": "a : $2.28"
+    },
+    {
+      "question": "  What is the square root of 8?",
+      "answer_1": "16",
+      "answer_2": "4.466",
+      "answer_3": "3.56",
+      "answer_4": "2.82",
+      "correct": "d : 2:82"
+    },
+    {
+      "question": "Identify the missing number in the series.0.18, 0.36, 0.72, _____, 2.88",
+      "answer_1": "1.62",
+      "answer_2": "0.9",
+      "answer_3": " 1.44",
+      "answer_4": "1.26",
+      "correct": "c : 1.44"
+    },
+    {
+      "question": " Kevin is 21 years old and his sister is a third his age. When Kevin is 36, what will be the age of his sister?",
+      "answer_1": "36",
+      "answer_2": "24",
+      "answer_3": "28",
+      "answer_4": "22",
+      "correct": "d : 22"
+    },
+    {
+      "question": " He's still sleeping, ________",
+      "answer_1": "do he?",
+      "answer_2": "isn't he?",
+      "answer_3": " wasn't he?",
+      "answer_4": " aren't he ?",
+      "correct": " b :isn't he? "
+    },
+    {
+      "question": " Yesterday, we ______ a very interesting conference call about the new ERP project. ",
+      "answer_1": "are having ",
+      "answer_2": "have",
+      "answer_3": "had",
+      "answer_4": "were had",
+      "correct": " c : had"
+    },
+    {
+      "question": " The plane _____ at New York's Kennedy Airport. ",
+      "answer_1": "Took off",
+      "answer_2": "Took down",
+      "answer_3": "landed",
+      "answer_4": "Drove",
+      "correct": "c : landed"
+    },
+    {
+      "question": " Compound Nouns: Thomas White, who orchestrated ___________ rescue packages, will address the group",
+      "answer_1": "Multi billion-dollars",
+      "answer_2": "Multi billions dollars",
+      "answer_3": "Multi billion dollar",
+      "answer_4": "Multi billion-dollar",
+      "correct": "d : Multi billion-dollar"
+    },
+    {
+      "question": " Prepositions: She always gets up early ______ the morning, so she can make it to class ______ time.",
+      "answer_1": "In ---- on",
+      "answer_2": "On ---- on",
+      "answer_3": "In ---- in",
+      "answer_4": "By ---- in",
+      "correct": "a : In ---- on"
+    },
+    {
+      "question": " Which tag is used to add columns to tables ?",
+      "answer_1": "td",
+      "answer_2": "tr",
+      "answer_3": "th",
+      "answer_4": "cols0pan",
+      "correct": " a : <td>"
+    },
+  
+    {
+      "question": "_______ attribute is used to specify where to open the linked document.",
+      "answer_1": "target",
+      "answer_2": " coords",
+      "answer_3": "rel",
+      "answer_4": "None of the above",
+      "correct": " a : target"
+    },
+    {
+      "question": " The HTML tags are all",
+      "answer_1": "In lower case",
+      "answer_2": "In upper case",
+      "answer_3": "Case sensitive",
+      "answer_4": " Not case sensitive",
+      "correct": " d :  Not case sensitive"
+    },
+    {
+      "question": "A _____ tag is used to specify that the browser is to fetch and use an external style sheet file",
+      "answer_1": "src",
+      "answer_2": "sheet",
+      "answer_3": " link",
+      "answer_4": "None of the above",
+      "correct": " c : <link>"
+    },
+    {
+      "question": "Which of the following property is used to set the background image of an element ?",
+      "answer_1": "background-repeat",
+      "answer_2": "background-position",
+      "answer_3": " background-image",
+      "answer_4": "background-color",
+      "correct": " c : background-image"
+    },
+    {
+      "question": "Which of the following property is used to increase or decrease the size of a font ?",
+      "answer_1": "font-weight",
+      "answer_2": "font",
+      "answer_3": "font-size",
+      "answer_4": "None of the above",
+      "correct": " c : font-size"
+    },
+    {
+      "question": " Local Browser used for validations on the Web Pages uses",
+      "answer_1": "js",
+      "answer_2": "java",
+      "answer_3": "HTML",
+      "answer_4": "CSS",
+      "correct": " a : js"
+    },
+    {
+      "question": "JavaScript code can be called by using",
+      "answer_1": "RMI",
+      "answer_2": "Preprocessor",
+      "answer_3": "Function / Method",
+      "answer_4": "None of the above",
+      "correct": "c :Function / Method"
+    },
+    {
+      "question": "Which of the following Attribute is used to include External JS code inside your HTML Document ?",
+      "answer_1": "link",
+      "answer_2": "script",
+      "answer_3": "ext",
+      "answer_4": " src",
+      "correct": "d : src"
+    },
+    {
+      "question": "Which was the first browser to support JavaScript ?",
+      "answer_1": "Google Chrome",
+      "answer_2": "Netscape",
+      "answer_3": "Mozilla Firefox",
+      "answer_4": "IE",
+      "correct": " b :Netscape"
+    }
+  ]

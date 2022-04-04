@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <p id="tab-1"  name="tab" class="sign-in" >Sign In</p>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" name="username" class="input" placeholder="enter email or username">
+                        <span id="checkEmail">This username or email does not exist</span>
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="signIn-pass" type="password" name="pass" class="input" data-type="password">
+                        <span id="signInAlert">incorrect password</span>
+                    </div>
+                    
+                    <div class="group">
+                        <div  class="button signIn" id="signIn-submit" >Sign in</div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signIn.js"></script>
+</body>
+</html>
