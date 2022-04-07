@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<style>
+    body {
+        height: 100vh;
+    }
+    
+    .section #btn {
+        background-color: #2f2e41;
+        width: 300px;
+        display: inline-block;
+        margin: 30px 0;
+        border-radius: 15px;
+        font-size: large;
+        border: none;
+        text-align: center;
+        padding: 6px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .section #btn:hover {
+        box-shadow: 0 4px 8px 0 #b5c9e1;
+        text-decoration: none;
+        background-color: white;
+        color: #2f2e41;
+    }
+    
+    .section {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: 1000x 200px 300px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    #result {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 18px;
+        /* padding: 15px; */
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    p {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 25px;
+        font-size: 15px;
+        width: 70%;
+    }
+    
+    #quastions {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+        justify-content: center;
+        place-items: center;
+    }
+    
+    #quastions .all_quastion {
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin: 2% 0;
+        padding: 2%;
+        width: 600px;
+        background-color: white;
+        box-shadow: 10px 2px 20px #9abae1;
+    }
+    
+    #grade {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 25px;
+    }
+    
+    span {
+        font-size: 19px;
+    }
+    
+    label {
+        margin-right: 60%;
+        font-weight: bold;
+    }
+    
+    @media screen and (max-width: 479px) {
+        body {
+            background: #9abae1;
+        }
+        #quastions .all_quastion {
+            width: 431px;
+            margin-left: 181px;
+        }
+        #result {
+            margin-left: 181px;
+        }
+        #img {
+            width: 350px;
+            margin-right: 48px;
+        }
+    }
+</style>
+
+<body>
+    <div class="section">
+        <div id="result">
+            <img src="images/our_solution.svg" alt="" id="img" width="800px" />
+            <h1 id="grade" data-aos="fade-up" data-aos-duration="3000"></h1>
+        </div>
+        <button type="submit" onclick="Show()" id="btn">Show result</button>
+
+        <div id="quastions"></div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="result.js">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
